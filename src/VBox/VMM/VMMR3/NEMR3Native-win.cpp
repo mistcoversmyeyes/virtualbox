@@ -818,7 +818,7 @@ static int nemR3WinInitCheckCapabilities(PVM pVM, PRTERRINFO pErrInfo)
         NEM_LOG_REL_XSAVE_FEATURE(AmxBf16Support);
         NEM_LOG_REL_XSAVE_FEATURE(AmxInt8Support);
         NEM_LOG_REL_XSAVE_FEATURE(AvxVnniSupport);
-#if WDK_NTDDI_VERSION > MY_NTDDI_WIN11_22000 /** @todo Introduced at some later point. */
+#if WDK_NTDDI_VERSION >= MY_NTDDI_WIN11_26100
         NEM_LOG_REL_XSAVE_FEATURE(AvxIfmaSupport);
         NEM_LOG_REL_XSAVE_FEATURE(AvxNeConvertSupport);
         NEM_LOG_REL_XSAVE_FEATURE(AvxVnniInt8Support);
